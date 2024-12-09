@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+  }
+  
+  h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+  }
+  h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+  }
+  h4 {
+    font-size: 20px;
+    color: #222;
+  }
+  h6 {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+  }
+  .section-p1 {
+    padding: 40px 0;
+  }
+  .section-m1 {
+    margin: 40px 0;
+  }
+  
+  button.normal {
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
+  button.normal:hover {
+    background-color: #088178;
+    color: #fff;
+  }
+  body {
+    width: 100%;
+  }
+  
+  /* header styles */
+  
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3e6f3;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-list-nav ul {
+    display: flex;
+  }
+  .header-list-nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  .header-list-nav ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+  .header-list-nav ul a:hover,
+  .header-list-nav ul a.active {
+    color: #088178;
+    content: "";
+  }
+  .header-list-icon a {
+    color: #1a1a1a;
+    padding-left: 20px;
+    transition: 0.3s ease;
+  }
+  .header-list-icon a:hover,
+  .header-list-nav ul a.active {
+    color: #088178;
+  }
+  .header-list-nav ul li a:hover::after,
+  .header-list-nav ul li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  
+  .header-logo img{
+    width: 60px;
+    height: 50px;
+  }
+  /* home main styles */
+  
+  /* hero section styles */
+  
+  #hero {
+    background-image: url(https://th.bing.com/th/id/OIP.j6bo7nHGgM_jKq878sDPiAHaHa?rs=1&pid=ImgDetMain);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+  }
+  
+  #hero h4 {
+    padding-bottom: 15px;
+    font-size: 40px;
+  }
+  #hero h2{
+    font-size: 70px;
+  
+  }
+  #hero h1 {
+    color: #088178;
+    font-size: 70px;
+  
+  }
+  #hero button {
+    background-color: transparent;
+    background-image: url(https://png.pngtree.com/png-clipart/20221228/original/pngtree-black-brushed-grunge-text-background-png-image_8818611.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    height: 60px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+    padding: 14px 65px 14px 65px;
+  }
+  
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #features .f-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    transition: box-shadow 0.3s;
+  }
+  #features .f-box:hover {
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+  }
+  #features .f-box img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #features .f-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+  }
+  #features .f-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+  }
+  #features .f-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+  }
+  #features .f-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+  }
+  #features .f-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+  }
+  #features .f-box:nth-child(6) h6 {
+    background-color: #724c25;
+  }
+  .product-section .pro-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 60px;
+  }
+  .product-section h1
+  .product-section p{
+    text-align: center;
+  }
+  .product-section .product-cart{
+    width: 280px;
+    border: 1px solid #ebebeb;
+    padding: 13px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.02s;
+  }
+  .product-section .product-cart :hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0, 0.06);
+  }
+.product-section .product-cart img{
+    width:100%;
+    border-radius: 25px;
+}
+.product-section .product-cart span{
+  color: #969696;
+    font-weight: 500;
+    line-height: 30px;
+}
+.product-section .product-cart h4{
+  font-size: 18px;
+  color:rgb(41,41,41);
+
+
+}
+.product-section .product-cart .stars{
+  color: crimson;
+  padding:  6px 0;
+}
+.product-section .product-cart .price{
+
+  color: darkgoldenrod;
+  padding: 4px 0;
+}
+
+.product-section .product-cart .buy-icon{
+
+  color:#724c25;
+  background-color: gold;
+
+  padding:15px;
+  border-radius: 50px;
+  position: absolute;
+  right: 10px;
+  left:10px;
+}
+#banners{
+  margin: 0 60px;
+}
+#banners h2,h4,span{
+color: blue;
+
+}
+#banners  .big-banners{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banners .big-banners div{
+
+  min-height: 500px;
+  margin: 15px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  background-size: cover;
+  backdrop-filter: blur(8%);
+}
+#banners .big-banners-1{
+  background-image: url(https://thumbs.dreamstime.com/z/e-commerce-buyer-internet-items-banner-young-woman-shopping-online-vector-illustrations-interacting-people-149357339.jpg)
+}
+#banners .big-banners-2{
+  background-image: url(https://cdn.vectorstock.com/i/preview-1x/57/56/template-banner-for-online-store-with-shopping-vector-42935756.jpg)
+}#banners .small-banners-1{
+  background-image: url(https://th.bing.com/th/id/OIP.2_qJW7zshOqy_Z36065YBwAAAA?rs=1&pid=ImgDetMain)
+}#banners .small-banners-2{
+  background-image: url(https://th.bing.com/th/id/OIP._wmdDbfmPc9xMySp-SxJ4wHaDV?w=2917&h=1313&rs=1&pid=ImgDetMain)
+}#banners .small-banners-3{
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/824/902/original/online-shopping-application-online-shopping-concept-animated-icon-video.jpg)
+}
+#banners .big-banners button{
+
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  color:rgb(248,248,248);
+  border: 1px solid rgb(248,248,248);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#banners .big-banners div:hover button{
+
+  background-color: #088178;
+  border: 1px solid #088178;
+}
+#banners .small--banners{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bannners  .small-banners div{
+min-height: 370px;
+margin:15px;
+height: 200px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding:25px;
+background-size: cover;
+}
+#banners .small-banners h2{
+
+  font-size: 25px;
+}
+#banners .small-banners h5{
+  color: #771818;
+
+
+}
+#footer{
+
+
+  display:flex;
+  align-items: flex-start;
+  padding: 75px;
+  justify-content: space-between;
+  background-color: #ececec;
+}
+#footer p,#footer a{
+
+  text-decoration: none;
+  color:rgb(109,109, 109);
+
+}
+#footer a:hover{
+
+
+  color:#088178;
+}
+
+#footer .about a{
+
+
+  display:block;
+  padding:8px 0;
+
+
+}
+#footer 
